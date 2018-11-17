@@ -37,9 +37,12 @@ public class Lab10TravisExercise {
         Predicate<String> firstElementTestPredicate = i -> (i=="apple");
         Predicate<Integer> otherElementTestPredicate = x -> (x==4);
         Predicate<String> noElementTestPredicate = s -> (s=="yellow");
-        Lab10TravisExercise.<String>linearSearch(firstElementTest, firstElementTestPredicate);
-        Lab10TravisExercise.<Integer>linearSearch(otherElementTest, otherElementTestPredicate);
-        Lab10TravisExercise.<String>linearSearch(noElementTest, noElementTestPredicate);
+        System.out.print("Testing to see that the first element in a String list matches the predicate: ");
+        System.out.println(Lab10TravisExercise.<String>linearSearch(firstElementTest, firstElementTestPredicate));
+        System.out.print("Testing to see that another element in an Integer list matches the predicate: ");
+        System.out.println(Lab10TravisExercise.<Integer>linearSearch(otherElementTest, otherElementTestPredicate));
+        System.out.print("Testing to see that no element in a String list matches the predicate: ");
+        System.out.println(Lab10TravisExercise.<String>linearSearch(noElementTest, noElementTestPredicate));
         
     }
     
